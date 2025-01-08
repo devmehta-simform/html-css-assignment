@@ -1,36 +1,97 @@
-body{
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: 0;
-    font-size: 1rem;
+body {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  font-size: 1rem;
 }
-.header{
-    background-color:  #2b78eb;
-    padding: 15px;
-    position: relative;
-    top: 0;
-    left: 0;
-    
+.header {
+  background-color: #2b78eb;
+  padding: 15px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
-.logo{
-    position: absolute;
+.logo {
+  position: absolute;
 }
-.search-bar-input{
-    padding:10px;
-    width: 50%;
-    margin-left: 15%;
+.search-bar-input {
+  padding: 10px;
+  width: 50%;
+  margin-left: 15%;
+  border: none;
 }
-button{
-    cursor: pointer;
-    font-size: 1rem;
+.search-bar-input:focus {
+  outline: none;
 }
-.header-btn{
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 10px;
-    border: none;
+button {
+  cursor: pointer;
+  font-size: 1rem;
 }
+.header-btn {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+}
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.dod {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.dodheader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.doditems {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.doditems > .item:first-child {
+  margin-left: auto;
+}
+
+.doditems > .item:last-child {
+  margin-right: auto;
+}
+.item-discount {
+  color: green;
+}
+.item-description {
+  font-size: small;
+  color: gray;
+}
+.item-name {
+  font-weight: bold;
+}
+.ad-item {
+  display: flex;
+  overflow: auto;
+}
+/* flex references:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
+https://bhch.github.io/posts/2021/04/centring-flex-items-and-allowing-overflow-scroll/
+ */

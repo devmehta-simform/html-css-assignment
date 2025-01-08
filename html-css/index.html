@@ -1,21 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart Home Page</title>
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--header starts-->
     <header class="header">
-        
-        <img src="logo.png" class="logo">
-        <div style="display: inline;"><button class="btn"></button><input type="text" placeholder="Search for products, brands and more" name="search" class="search-bar-input"><button style="color: #2b78eb; position: relative;right: 3%; background-color: transparent; border: none;"><i class="fa fa-search" aria-hidden="true"></i></button></div>
-        <button type="button" class="header-btn"  style="color: #2b78eb; font-weight: bold;">Login</button>
-        <select class="header-btn" name="dropdown" id="dropdown" style="background-color: transparent; color: white; font-weight: bold; font-size: 1rem;"><option value="more">More</option></select>
-        <button type="button" class='header-btn' style="background-color: transparent;color: white;font-weight: bold;"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</button>
+      <img src="logo.png" class="logo" />
+      <div style="display: inline">
+        <button class="btn"></button
+        ><input
+          type="text"
+          placeholder="Search for products, brands and more"
+          name="search"
+          class="search-bar-input"
+        /><button
+          style="
+            color: #2b78eb;
+            position: relative;
+            right: 4%;
+            background-color: transparent;
+            border: none;
+          "
+        >
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <button
+        type="button"
+        class="header-btn"
+        style="color: #2b78eb; font-weight: bold"
+      >
+        Login
+      </button>
+      <select
+        class="header-btn"
+        name="dropdown"
+        id="dropdown"
+        style="
+          background-color: transparent;
+          color: white;
+          font-weight: bold;
+          font-size: 1rem;
+        "
+      >
+        <option value="more">More</option>
+      </select>
+      <button
+        type="button"
+        class="header-btn"
+        style="background-color: transparent; color: white; font-weight: bold"
+      >
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+      </button>
     </header>
-</body>
+    <!--header ends-->
+    <!--categories starts-->
+    <div class="categories" style="border-bottom: 1px solid silver">
+      <div class="items">
+        <div class="item">
+          <figure>
+            <img
+              src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100"
+              alt="Grocery"
+            />
+            <figcaption>Grocery</figcaption>
+          </figure>
+        </div>
+        <div class="item">
+          <figure>
+            <img
+              src="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100"
+              alt="Mobiles"
+            />
+            <figcaption>Mobiles</figcaption>
+          </figure>
+        </div>
+        <div class="item">
+          <figure>
+            <img
+              alt="Fashion"
+              src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100"
+            />
+            <figcaption>Fashion</figcaption>
+          </figure>
+        </div>
+        <div class="item">
+          <figure>
+            <img
+              alt="Electronics"
+              src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+            />
+            <figcaption>Electronics</figcaption>
+          </figure>
+        </div>
+        <div class="item">
+          <figure>
+            <img
+              alt="Home"
+              src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100"
+            />
+            <figcaption>Home</figcaption>
+          </figure>
+        </div>
+        <div class="item">
+          <figure>
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"
+              alt="Appliances"
+            />
+            <figcaption>Appliances</figcaption>
+          </figure>
+        </div>
+        <div class="item">
+          <figure>
+            <img
+              src="https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100"
+              alt="Travel"
+            />
+            <figcaption>Travel</figcaption>
+          </figure>
+        </div>
+        <div class="item">
+          <figure>
+            <img
+              src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100"
+              alt="Beauty, Toys &amp; More"
+            />
+            <figcaption>Beauty, Toys &amp; More</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!--categories ends-->
+    <!--Products starts-->
+    <div style="display: flex; flex-direction: column; justify-content: center">
+      <!--section1 starts-->
+      <section class="dod">
+        <div class="dodheader">
+          <h3 style="font-size: xx-large; font-weight: bolder">
+            Deals of the day
+            <span style="color: gray; font-size: large"
+              ><i class="fa fa-clock-o" aria-hidden="true">
+                22:07:36 left</i
+              ></span
+            >
+          </h3>
+          <button
+            class="header-btn"
+            style="background-color: #2b78eb; color: white"
+          >
+            VIEW ALL
+          </button>
+        </div>
+        <div class="doditems">
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!--section1 ends-->
+      <!--section2 starts-->
+      <section class="dod">
+        <div class="dodheader">
+          <h3 style="font-size: xx-large; font-weight: bolder">
+            Books and Music Instruments
+          </h3>
+          <button
+            class="header-btn"
+            style="background-color: #2b78eb; color: white"
+          >
+            VIEW ALL
+          </button>
+        </div>
+        <div class="doditems">
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://th.bing.com/th/id/OIP.ofZ_PgEGZrkUm0c8d0_4GgAAAA?rs=1&pid=ImgDetMain"
+              />
+              <figcaption class="item-name">item</figcaption>
+              <figcaption class="item-discount">discount</figcaption>
+              <figcaption class="item-description">description</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!--section2 ends-->
+    </div>
+    <!--Products ends-->
+  </body>
 </html>
