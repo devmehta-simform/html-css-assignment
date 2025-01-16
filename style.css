@@ -12,18 +12,31 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99vw;
+  flex-wrap: wrap;
 }
-.logo {
-  position: absolute;
+form {
+  display: flex;
 }
 .search-bar-input {
   padding: 10px;
-  width: 50%;
-  margin-left: 15%;
+  margin-left: 5%;
+  /* margin-right: 15%; */
+  min-width: 30vw;
   border: none;
+  text-overflow: ellipsis;
 }
-.search-bar-input:focus {
-  outline: none;
+.search-icon {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  position: relative;
+  left: -12%;
+  cursor: pointer;
+  color: #2b78eb;
 }
 button {
   cursor: pointer;
@@ -38,6 +51,12 @@ button {
   border: none;
   border-radius: 2px;
 }
+#dropdown {
+}
+#dropdown:focus {
+  outline: none;
+}
+/*
 figure {
   display: flex;
   justify-content: center;
@@ -90,7 +109,7 @@ figure {
 .ad-item {
   display: flex;
   overflow: auto;
-}
+} */
 /* flex references:
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
 https://bhch.github.io/posts/2021/04/centring-flex-items-and-allowing-overflow-scroll/
