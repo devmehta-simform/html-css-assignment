@@ -50,7 +50,19 @@ button {
   border: none;
   border-radius: 2px;
 }
-#dropdown {
+#dropdown > i {
+  transition: transform 0.3s ease-in-out;
+}
+#dropdown:hover > i {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+figure figcaption > i {
+  transition: transform 0.3s ease-in-out;
+}
+figure:hover figcaption > i {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
 }
 #dropdown:focus {
   outline: none;
