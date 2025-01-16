@@ -59,7 +59,7 @@ button {
   transition: transform 0.3s ease-in-out;
 }
 figure figcaption > i {
-  transition: transform 0.3s ease-in-out; /* Add transition to the default state */
+  transition: transform 0.3s ease-in-out;
 }
 figure:hover figcaption > i {
   transform: rotate(180deg);
@@ -123,6 +123,13 @@ figure {
 }
 .item-name {
   font-weight: bold;
+}
+img {
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s ease-in-out;
 }
 /*
 */
