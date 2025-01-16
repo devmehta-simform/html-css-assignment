@@ -51,6 +51,7 @@ button {
   border-radius: 2px;
 }
 #dropdown > i {
+  /* transform: rotate(180deg); */
   transition: transform 0.3s ease-in-out;
 }
 #dropdown:hover > i {
@@ -58,7 +59,7 @@ button {
   transition: transform 0.3s ease-in-out;
 }
 figure figcaption > i {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; /* Add transition to the default state */
 }
 figure:hover figcaption > i {
   transform: rotate(180deg);
@@ -66,6 +67,10 @@ figure:hover figcaption > i {
 }
 #dropdown:focus {
   outline: none;
+}
+.doditems > .item > figure > img {
+  height: 200px;
+  width: 200px;
 }
 figure {
   display: flex;
