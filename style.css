@@ -15,7 +15,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 99vw;
   flex-wrap: wrap;
 }
 form {
@@ -56,7 +55,6 @@ button {
 #dropdown:focus {
   outline: none;
 }
-/*
 figure {
   display: flex;
   justify-content: center;
@@ -65,11 +63,16 @@ figure {
 }
 .items {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+.item {
+  cursor: pointer;
+}
+/*
+
 .dod {
   display: flex;
   flex-direction: column;
