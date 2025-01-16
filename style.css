@@ -71,8 +71,6 @@ figure {
 .item {
   cursor: pointer;
 }
-/*
-
 .dod {
   display: flex;
   flex-direction: column;
@@ -109,10 +107,8 @@ figure {
 .item-name {
   font-weight: bold;
 }
-.ad-item {
-  display: flex;
-  overflow: auto;
-} */
+/*
+*/
 /* flex references:
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
 https://bhch.github.io/posts/2021/04/centring-flex-items-and-allowing-overflow-scroll/
